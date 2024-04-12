@@ -18,16 +18,18 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ## Overview
 
 ### Screenshot
+
 ![](./screenshots/Screenshot_desktop.png)
 ![](./screenshots/Screenshot_mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/MH-WebDev/recipe-page-main)
 
 ## My process
+
  Built over the span of a couple hours to refresh myself on basic html/css. 
+
 ### Built with
 
 - Semantic HTML5 markup
