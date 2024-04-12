@@ -1,12 +1,14 @@
 :root {
---bg-body: #f3e5d8;
---bg-prep: rgb(255, 247, 252);
+--bg-body: hsl(30, 54%, 90%);
+--bg-prep: hsl(330, 100%, 98%);
+/* FONT SIZE */
 --fs-title: 2rem;
 --fs-subtitle: 1rem;
---fc-purple: rgb(121, 36, 69);
---fc-subtitle: rgb(133, 67, 45);
---fc-general: rgb(87, 86, 83);
-
+/* FONT COLOR */
+--fc-purple: hsl(332, 51%, 32%);
+--fc-subtitle: hsl(14, 45%, 36%);
+--fc-general: hsl(30, 10%, 34%);
+--fc-title: hsl(24, 5%, 18%);
 }
 * {
     margin: 0;
@@ -14,17 +16,17 @@
 }
 /* FONT SETUP */
 
-.young-serif-regular {
+/* .young-serif-regular {
     font-family: "Young Serif", serif;
-    font-weight: 200;
+    font-weight: 400;
     font-style: normal;
 }
-.outfit-title {
+.outfit-400 {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-}
+} */
 
 /* UTILITY */
 
@@ -40,7 +42,7 @@ html {
 h1 {
     font-family: "Young Serif", serif;
     font-size: var(--fs-title);
-    font-weight: 300;
+    font-weight: 400;
 }
 h2 {
     color: var(--fc-purple);
@@ -65,23 +67,25 @@ li::marker {
 
 body {
     font-family: "Outfit", sans-serif;
+    background-color: var(--bg-body);
     color: var(--fc-general);
     display: flex;
     flex-direction: column;
     width: 375px;
     margin: 0 auto;
 }
-.wrapper {
-    padding: 1.5em 1.87rem 0;
+.main {
+    background-color: white; 
 }
-@media (min-width: 46.8em) {
+.wrapper {
+    padding: 1.5em 1.87em 0;
+}
+@media (min-width: 62.5em) {
     body {
-        background-color: var(--bg-body);
         width: 740px;
         margin: 2em auto;
     }
     .main {
-        background-color: white;
         border-radius: 15px;
     }
 }
@@ -97,7 +101,7 @@ body {
     padding: 0;
 }
 
-@media (min-width: 46.8em) {
+@media (min-width: 62.5em) {
     .header-image.wrapper {
         padding: 1.87rem;
     }
@@ -110,7 +114,7 @@ body {
 
 .recipe-intro h1 {
     font-size: var(--fs-title);
-    color: black;
+    color: var(--fc-title);
     padding-bottom: 1rem;
 }
 .recipe-intro p {
@@ -150,22 +154,6 @@ body {
     font-weight: bold;
 }
 
-/* .instructions ol {
-    list-style-type: none;
-}
-.instructions li::before {
-    content: counter(li); color: var(--fc-subtitle);
-    display: inline-block; 
-    width: 1em;
-    font-weight: bold;
-    margin-left: -1em;
-    margin-right: 1em;
-}
-.instructions li {
-    counter-increment: li
-} */
-
-
 /* NUTRITION INFO */
 
 .nutrition {
@@ -187,7 +175,6 @@ body {
     border: none;
     padding: 10px 30px;
     border-bottom: 1px solid lightgray;
-    
 }
 .nutrition td:nth-child(2) {
     color: var(--fc-subtitle);
